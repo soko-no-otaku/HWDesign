@@ -13,8 +13,8 @@ module alu(A,B,O,CTR,ck);
       case (C)
 	'b0000 : O <= INA + INB;
 	'b0001 : O <= INA - INB;
-	'b1000 : O <= INA && INB;
-	'b1001 : O <= INA || INB;
+	'b1000 : O <= INA & INB;
+	'b1001 : O <= INA | INB;
 	'b1010 : O <= INA ^ INB;
 	'b1011 : O <= ~INA;
 	'b1100 : O <= INA >> 1;
